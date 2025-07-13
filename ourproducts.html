@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Products - GlobalSource</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.category-card:hover .category-overlay {
+opacity: 1;
+}
+.category-card:hover img {
+transform: scale(1.05);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center">
+<a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+<nav class="hidden md:ml-10 md:flex md:space-x-8">
+<a href="#" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out">Home</a>
+<a href="https://readdy.ai/home/d47577e9-cb9e-42f9-a08a-64d9bd027de3/0db5445c-95b8-4bf8-8df3-d84c5d69dc96" data-readdy="true" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out">Services</a>
+<a href="#" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out">About Us</a>
+<a href="https://readdy.ai/home/d47577e9-cb9e-42f9-a08a-64d9bd027de3/3d3c8491-b685-4343-83a6-9e14e073631c" data-readdy="true" class="text-primary font-medium transition duration-150 ease-in-out">Our Products</a>
+<a href="#" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out">Contact</a>
+</nav>
+</div>
+<div class="flex items-center space-x-4">
+<div class="language-switch relative inline-flex items-center">
+<span class="mr-2 text-sm font-medium text-gray-700">EN</span>
+<label class="relative inline-block w-12 h-7 rounded-full bg-gray-200">
+<input type="checkbox" class="opacity-0 w-0 h-0" id="language-toggle">
+<span class="slider absolute cursor-pointer top-0 left-0 right-0 bottom-0 rounded-full"></span>
+</label>
+<span class="ml-2 text-sm font-medium text-gray-400">DE</span>
+</div>
+<button class="bg-primary text-white px-6 py-2 !rounded-button font-medium shadow-sm hover:bg-primary/90 transition duration-150 ease-in-out whitespace-nowrap">Get Quote</button>
+<button class="md:hidden flex items-center justify-center w-10 h-10" id="mobile-menu-button">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+<!-- Mobile menu -->
+<div class="md:hidden hidden" id="mobile-menu">
+<div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50">Home</a>
+<a href="https://readdy.ai/home/d47577e9-cb9e-42f9-a08a-64d9bd027de3/0db5445c-95b8-4bf8-8df3-d84c5d69dc96" data-readdy="true" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50">Services</a>
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50">About Us</a>
+<a href="https://readdy.ai/home/d47577e9-cb9e-42f9-a08a-64d9bd027de3/3d3c8491-b685-4343-83a6-9e14e073631c" data-readdy="true" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Our Products</a>
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50">Contact</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Page Title Section -->
+<section class="py-12 bg-white">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto text-center">
+<nav class="flex justify-center mb-4">
+<ol class="flex items-center space-x-2 text-sm text-gray-500">
+<li>
+<a href="#" class="hover:text-primary">Home</a>
+</li>
+<li class="flex items-center">
+<i class="ri-arrow-right-s-line mx-1"></i>
+<span class="text-primary">Our Products</span>
+</li>
+</ol>
+</nav>
+<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Products</h1>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Navigate our product collection to find exactly what your business requires.</p>
+</div>
+</div>
+</section>
+<!-- Categories Grid -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- E-scooters -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20modern%20electric%20scooter%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20a%20sleek%20black%20e-scooter%20with%20blue%20accents%20from%20a%203%2F4%20angle%20view.&width=600&height=600&seq=escooter2&orientation=squarish" alt="E-scooters" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">E-scooters</h3>
+<p class="text-white/80 text-sm mt-2">Modern electric mobility solutions</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">E-scooters</h3>
+<p class="text-gray-600 mt-2 mb-4">High-performance electric scooters with long battery life and premium build quality.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Solar Panel -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20solar%20panel%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20a%20black-framed%20solar%20panel%20from%20a%20slight%20angle%20view.&width=600&height=600&seq=solar2&orientation=squarish" alt="Solar Panel" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Solar Panel</h3>
+<p class="text-white/80 text-sm mt-2">Renewable energy solutions</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Solar Panel</h3>
+<p class="text-gray-600 mt-2 mb-4">High-efficiency solar panels for residential and commercial applications.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Industrial -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20industrial%20CNC%20machine%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20a%20modern%20metallic%20manufacturing%20equipment%20from%20a%203%2F4%20angle%20view.&width=600&height=600&seq=industrial2&orientation=squarish" alt="Industrial" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Industrial</h3>
+<p class="text-white/80 text-sm mt-2">Manufacturing and production equipment</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Industrial</h3>
+<p class="text-gray-600 mt-2 mb-4">High-quality industrial machinery and equipment for manufacturing facilities.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Office Supplies -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20premium%20leather%20office%20notebook%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20an%20elegant%20brown%20leather-bound%20notebook%20from%20a%20slight%20angle%20view.&width=600&height=600&seq=office2&orientation=squarish" alt="Office Supplies" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Office Supplies</h3>
+<p class="text-white/80 text-sm mt-2">Professional workplace essentials</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Office Supplies</h3>
+<p class="text-gray-600 mt-2 mb-4">Complete range of office supplies and equipment for professional environments.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Apparel -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20premium%20business%20suit%20jacket%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20a%20navy%20blue%20blazer%20from%20a%203%2F4%20angle%20view.&width=600&height=600&seq=apparel2&orientation=squarish" alt="Apparel" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Apparel</h3>
+<p class="text-white/80 text-sm mt-2">Fashion and clothing collections</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Apparel</h3>
+<p class="text-gray-600 mt-2 mb-4">Trendy and high-quality clothing for all seasons, including custom manufacturing.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Outdoors -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20premium%20hiking%20backpack%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20a%20modern%20outdoor%20backpack%20from%20a%203%2F4%20angle%20view.&width=600&height=600&seq=outdoors2&orientation=squarish" alt="Outdoors" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Outdoors</h3>
+<p class="text-white/80 text-sm mt-2">Adventure and recreation gear</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Outdoors</h3>
+<p class="text-gray-600 mt-2 mb-4">Durable outdoor equipment for camping, hiking, and recreational activities.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Home Supplies -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20premium%20ceramic%20vase%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20an%20elegant%20white%20modern%20vase%20from%20a%20slight%20angle%20view.&width=600&height=600&seq=home2&orientation=squarish" alt="Home Supplies" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Home Supplies</h3>
+<p class="text-white/80 text-sm mt-2">Household essentials and decor</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Home Supplies</h3>
+<p class="text-gray-600 mt-2 mb-4">Quality household products including kitchenware, textiles, and home decor items.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Sports -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20premium%20yoga%20mat%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20a%20rolled-up%20blue%20yoga%20mat%20from%20a%203%2F4%20angle%20view.&width=600&height=600&seq=sports2&orientation=squarish" alt="Sports" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Sports</h3>
+<p class="text-white/80 text-sm mt-2">Athletic and fitness equipment</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Sports</h3>
+<p class="text-gray-600 mt-2 mb-4">Professional-grade sports equipment and accessories for various athletic activities.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Furniture -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20modern%20armchair%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20a%20sleek%20gray%20upholstered%20chair%20from%20a%203%2F4%20angle%20view.&width=600&height=600&seq=furniture2&orientation=squarish" alt="Furniture" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Furniture</h3>
+<p class="text-white/80 text-sm mt-2">Modern and classic home furnishings</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Furniture</h3>
+<p class="text-gray-600 mt-2 mb-4">Stylish and durable furniture for homes, offices, and commercial spaces.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Pet Supplies -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20premium%20pet%20bed%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20a%20round%20plush%20pet%20bed%20from%20a%20slight%20angle%20view.&width=600&height=600&seq=pet2&orientation=squarish" alt="Pet Supplies" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Pet Supplies</h3>
+<p class="text-white/80 text-sm mt-2">Products for animal care and comfort</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Pet Supplies</h3>
+<p class="text-gray-600 mt-2 mb-4">Comprehensive range of pet products including beds, toys, and grooming supplies.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Packages -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20premium%20gift%20box%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20an%20elegant%20black%20packaging%20box%20from%20a%203%2F4%20angle%20view.&width=600&height=600&seq=packages2&orientation=squarish" alt="Packages" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Packages</h3>
+<p class="text-white/80 text-sm mt-2">Packaging and shipping solutions</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Packages</h3>
+<p class="text-gray-600 mt-2 mb-4">Custom packaging solutions including boxes, containers, and shipping materials.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Toys -->
+<div class="category-card bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<img src="https://readdy.ai/api/search-image?query=Single%20wooden%20building%20blocks%20set%20on%20pure%20white%20background%2C%20minimalist%20product%20photography%20with%20soft%20shadows%2C%20clean%20and%20simple%20composition%2C%20professional%20lighting%2C%20high-end%20commercial%20product%20shot%20showing%20a%20natural%20wooden%20educational%20toy%20from%20a%20slight%20angle%20view.&width=600&height=600&seq=toys2&orientation=squarish" alt="Toys" class="w-full h-full object-cover object-top transition duration-500">
+<div class="category-overlay absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 transition duration-300 flex items-end">
+<div class="p-6">
+<h3 class="text-xl font-bold text-white">Toys</h3>
+<p class="text-white/80 text-sm mt-2">Children's playthings and games</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900">Toys</h3>
+<p class="text-gray-600 mt-2 mb-4">Educational and recreational toys for children of all ages, meeting safety standards.</p>
+<button class="text-primary font-medium flex items-center hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap">
+<span>Request Quote</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Need Custom Sourcing Solutions?</h2>
+<p class="text-xl text-gray-600 mb-10">Can't find what you're looking for? Our sourcing experts can help you locate and negotiate with manufacturers in China for any product requirements.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-white px-8 py-3 !rounded-button font-medium shadow-lg hover:bg-primary/90 transition duration-150 ease-in-out whitespace-nowrap">Request Custom Quote</button>
+<button class="bg-white text-gray-900 px-8 py-3 !rounded-button font-medium shadow-lg hover:bg-gray-50 transition duration-150 ease-in-out whitespace-nowrap">Contact Our Team</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<div>
+<a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 inline-block">logo</a>
+<p class="text-gray-400 mb-6">Your trusted partner for sourcing products from China with offices in Berlin and Shanghai.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-150">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-150">
+<i class="ri-twitter-x-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-150">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-150">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+<ul class="space-y-4">
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Home</a></li>
+<li><a href="https://readdy.ai/home/d47577e9-cb9e-42f9-a08a-64d9bd027de3/0db5445c-95b8-4bf8-8df3-d84c5d69dc96" data-readdy="true" class="text-gray-400 hover:text-white transition duration-150">Services</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150">About Us</a></li>
+<li><a href="https://readdy.ai/home/d47577e9-cb9e-42f9-a08a-64d9bd027de3/3d3c8491-b685-4343-83a6-9e14e073631c" data-readdy="true" class="text-gray-400 hover:text-white transition duration-150">Our Products</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Services</h3>
+<ul class="space-y-4">
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Product Sourcing</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Quality Inspection</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Logistics Support</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Supplier Verification</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150">Market Research</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+<p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates and insights on sourcing from China.</p>
+<form class="mb-4">
+<div class="flex">
+<input type="email" class="flex-grow px-4 py-3 rounded-l border-none focus:outline-none text-gray-900" placeholder="Your email">
+<button type="submit" class="bg-primary text-white px-4 py-3 rounded-r hover:bg-primary/90 transition duration-150 whitespace-nowrap">Subscribe</button>
+</div>
+</form>
+<div class="flex items-center space-x-4">
+<div class="flex items-center">
+<i class="ri-visa-line ri-lg mr-2"></i>
+<span class="text-sm text-gray-400">Visa</span>
+</div>
+<div class="flex items-center">
+<i class="ri-mastercard-line ri-lg mr-2"></i>
+<span class="text-sm text-gray-400">Mastercard</span>
+</div>
+<div class="flex items-center">
+<i class="ri-paypal-line ri-lg mr-2"></i>
+<span class="text-sm text-gray-400">PayPal</span>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 GlobalSource. All rights reserved.</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-400 text-sm hover:text-white transition duration-150">Privacy Policy</a>
+<a href="#" class="text-gray-400 text-sm hover:text-white transition duration-150">Terms of Service</a>
+<a href="#" class="text-gray-400 text-sm hover:text-white transition duration-150">Cookies</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Toggle icon
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+});
+</script>
+<script id="language-toggle-script">
+document.addEventListener('DOMContentLoaded', function() {
+const languageToggle = document.getElementById('language-toggle');
+const elementsWithDataAttributes = document.querySelectorAll('[data-en][data-de]');
+// Initialize with English
+let currentLanguage = 'en';
+// Function to update language
+function updateLanguage(lang) {
+elementsWithDataAttributes.forEach(element => {
+element.textContent = element.getAttribute(`data-${lang}`);
+});
+currentLanguage = lang;
+}
+// Toggle language when switch is clicked
+languageToggle.addEventListener('change', function() {
+if (this.checked) {
+updateLanguage('de');
+} else {
+updateLanguage('en');
+}
+});
+});
+</script>
+<script id="category-hover-effect">
+document.addEventListener('DOMContentLoaded', function() {
+const categoryCards = document.querySelectorAll('.category-card');
+categoryCards.forEach(card => {
+card.addEventListener('mouseenter', function() {
+const overlay = this.querySelector('.category-overlay');
+overlay.classList.add('opacity-100');
+});
+card.addEventListener('mouseleave', function() {
+const overlay = this.querySelector('.category-overlay');
+overlay.classList.remove('opacity-100');
+});
+});
+});
+</script>
+</body>
+</html>

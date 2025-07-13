@@ -1,0 +1,234 @@
+About Us
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - GlobalSource | Your Trusted Sourcing Partner</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+</style>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=A%20modern%20world%20map%20visualization%20with%20a%20light%20gray%20background%20%28RGB:%20240%2C240%2C240%29.%20The%20map%20shows%20clear%20continental%20outlines%20with%20China%20and%20Germany%20prominently%20highlighted%20in%20bright%20azure%20blue%20%28RGB:%2050%2C150%2C255%29.%20A%20subtle%20glowing%20connection%20line%20arcs%20between%20Shanghai%20and%20Berlin.%20The%20map%20style%20is%20clean%20and%20minimalist%20with%20thin%20grid%20lines.%20Europe%20and%20Asia%20are%20emphasized%20with%20slightly%20darker%20shading.%20Major%20cities%20like%20Shanghai%20and%20Berlin%20are%20marked%20with%20small%20glowing%20dots.%20The%20design%20is%20professional%20and%20elegant%2C%20perfect%20for%20a%20corporate%20website.&width=1920&height=800&seq=hero124&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.language-switch input:checked + .slider {
+background-color: #3b82f6;
+}
+.language-switch input:checked + .slider:before {
+transform: translateX(24px);
+}
+.language-switch .slider:before {
+position: absolute;
+content: "";
+height: 20px;
+width: 20px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: .3s;
+border-radius: 50%;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center">
+<a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+<nav class="hidden md:ml-10 md:flex md:space-x-8">
+<a href="#" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out" data-en="Home" data-de="Startseite">Home</a>
+<a href="#" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out" data-en="Services" data-de="Dienstleistungen">Services</a>
+<a href="#" class="text-gray-900 hover:text-primary font-medium transition duration-150 ease-in-out" data-en="About Us" data-de="Über Uns">About Us</a>
+<a href="#" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out" data-en="How It Works" data-de="So Funktioniert's">How It Works</a>
+<a href="#" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out" data-en="Contact" data-de="Kontakt">Contact</a>
+</nav>
+</div>
+<div class="flex items-center space-x-4">
+<div class="language-switch relative inline-flex items-center">
+<span class="mr-2 text-sm font-medium text-gray-700">EN</span>
+<label class="relative inline-block w-12 h-7 rounded-full bg-gray-200">
+<input type="checkbox" class="opacity-0 w-0 h-0" id="language-toggle">
+<span class="slider absolute cursor-pointer top-0 left-0 right-0 bottom-0 rounded-full"></span>
+</label>
+<span class="ml-2 text-sm font-medium text-gray-400">DE</span>
+</div>
+<button class="bg-primary text-white px-6 py-2 !rounded-button font-medium shadow-sm hover:bg-primary/90 transition duration-150 ease-in-out whitespace-nowrap" data-en="Get Quote" data-de="Angebot Anfordern">Get Quote</button>
+<button class="md:hidden flex items-center justify-center w-10 h-10" id="mobile-menu-button">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+<!-- Mobile menu -->
+<div class="md:hidden hidden" id="mobile-menu">
+<div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50" data-en="Home" data-de="Startseite">Home</a>
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50" data-en="Services" data-de="Dienstleistungen">Services</a>
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50" data-en="About Us" data-de="Über Uns">About Us</a>
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50" data-en="How It Works" data-de="So Funktioniert's">How It Works</a>
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50" data-en="Contact" data-de="Kontakt">Contact</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section relative bg-gradient-to-r from-primary/10 to-transparent">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="flex flex-col justify-center min-h-[400px] py-20">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight max-w-3xl" data-en="Bridging Europe and Asia Through Trust and Excellence" data-de="Europa und Asien durch Vertrauen und Exzellenz verbinden">Bridging Europe and Asia Through Trust and Excellence</h1>
+<p class="mt-6 text-xl text-gray-600 max-w-2xl" data-en="With over a decade of experience, we've built lasting partnerships and transformed supply chains across continents." data-de="Mit über einem Jahrzehnt Erfahrung haben wir dauerhafte Partnerschaften aufgebaut und Lieferketten über Kontinente hinweg transformiert.">With over a decade of experience, we've built lasting partnerships and transformed supply chains across continents.</p>
+</div>
+</div>
+</section>
+<!-- Our Story -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" data-en="Our Story" data-de="Unsere Geschichte">Our Story</h2>
+<p class="text-lg text-gray-600 mb-6" data-en="Founded in 2012, GlobalSource began with a simple mission: to make sourcing from China accessible, transparent, and reliable for European businesses." data-de="GlobalSource wurde 2012 mit einer einfachen Mission gegründet: die Beschaffung aus China für europäische Unternehmen zugänglich, transparent und zuverlässig zu gestalten.">Founded in 2012, GlobalSource began with a simple mission: to make sourcing from China accessible, transparent, and reliable for European businesses.</p>
+<p class="text-lg text-gray-600 mb-6" data-en="What started as a small team in Berlin has grown into a dynamic organization with offices in both Germany and China, serving hundreds of satisfied clients across Europe." data-de="Was als kleines Team in Berlin begann, ist zu einer dynamischen Organisation mit Büros in Deutschland und China herangewachsen, die Hunderte zufriedener Kunden in ganz Europa betreut.">What started as a small team in Berlin has grown into a dynamic organization with offices in both Germany and China, serving hundreds of satisfied clients across Europe.</p>
+<p class="text-lg text-gray-600" data-en="Today, we combine German precision with Chinese manufacturing expertise to deliver exceptional value to our clients." data-de="Heute verbinden wir deutsche Präzision mit chinesischer Fertigungsexpertise, um unseren Kunden außergewöhnlichen Mehrwert zu bieten.">Today, we combine German precision with Chinese manufacturing expertise to deliver exceptional value to our clients.</p>
+</div>
+</div>
+</section>
+<!-- Our Values -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" data-en="Our Core Values" data-de="Unsere Kernwerte">Our Core Values</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto" data-en="The principles that guide every decision we make and every relationship we build" data-de="Die Prinzipien, die jede unserer Entscheidungen und jede Beziehung, die wir aufbauen, leiten">The principles that guide every decision we make and every relationship we build</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-shield-check-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4" data-en="Trust & Integrity" data-de="Vertrauen & Integrität">Trust & Integrity</h3>
+<p class="text-gray-600" data-en="We build lasting relationships through transparency and honest communication" data-de="Wir bauen dauerhafte Beziehungen durch Transparenz und ehrliche Kommunikation auf">We build lasting relationships through transparency and honest communication</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-award-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4" data-en="Excellence" data-de="Exzellenz">Excellence</h3>
+<p class="text-gray-600" data-en="We strive for the highest quality in every aspect of our service" data-de="Wir streben in jedem Aspekt unseres Service nach höchster Qualität">We strive for the highest quality in every aspect of our service</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-global-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4" data-en="Cultural Bridge" data-de="Kulturelle Brücke">Cultural Bridge</h3>
+<p class="text-gray-600" data-en="We leverage our understanding of both markets to create seamless partnerships" data-de="Wir nutzen unser Verständnis beider Märkte, um nahtlose Partnerschaften zu schaffen">We leverage our understanding of both markets to create seamless partnerships</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-recycle-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-4" data-en="Sustainability" data-de="Nachhaltigkeit">Sustainability</h3>
+<p class="text-gray-600" data-en="We promote environmentally responsible sourcing practices" data-de="Wir fördern umweltverantwortliche Beschaffungspraktiken">We promote environmentally responsible sourcing practices</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Team -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" data-en="Our Leadership Team" data-de="Unser Führungsteam">Our Leadership Team</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto" data-en="Meet the experts who make global sourcing simple and reliable" data-de="Lernen Sie die Experten kennen, die globale Beschaffung einfach und zuverlässig machen">Meet the experts who make global sourcing simple and reliable</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="text-center">
+<div class="mb-6">
+<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20confident%20middle-aged%20German%20businessman%20in%20a%20modern%20suit.%20Natural%20lighting%2C%20neutral%20background%2C%20warm%20and%20approachable%20expression.%20Clean%2C%20corporate%20style%20with%20attention%20to%20professional%20appearance.&width=400&height=400&seq=team1&orientation=squarish" alt="Marcus Weber" class="w-48 h-48 rounded-full mx-auto object-cover">
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Marcus Weber</h3>
+<p class="text-gray-600 mb-4" data-en="CEO & Co-Founder" data-de="CEO & Mitgründer">CEO & Co-Founder</p>
+<p class="text-gray-600 text-sm max-w-sm mx-auto" data-en="20+ years of experience in international trade and supply chain management" data-de="Über 20 Jahre Erfahrung im internationalen Handel und Supply Chain Management">20+ years of experience in international trade and supply chain management</p>
+</div>
+<div class="text-center">
+<div class="mb-6">
+<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20Chinese%20businesswoman%20in%20her%2040s.%20Modern%20business%20attire%2C%20confident%20and%20friendly%20expression.%20Clean%2C%20corporate%20style%20with%20Shanghai%20office%20background%20slightly%20blurred.&width=400&height=400&seq=team2&orientation=squarish" alt="Li Wei" class="w-48 h-48 rounded-full mx-auto object-cover">
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Li Wei</h3>
+<p class="text-gray-600 mb-4" data-en="Managing Director, Asia" data-de="Geschäftsführerin, Asien">Managing Director, Asia</p>
+<p class="text-gray-600 text-sm max-w-sm mx-auto" data-en="Expert in Chinese manufacturing and quality control systems" data-de="Expertin für chinesische Fertigung und Qualitätskontrollsysteme">Expert in Chinese manufacturing and quality control systems</p>
+</div>
+<div class="text-center">
+<div class="mb-6">
+<img src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20a%20young%20German%20woman%20in%20business%20attire.%20Modern%2C%20professional%20appearance%20with%20a%20tech-savvy%20look.%20Natural%20lighting%2C%20clean%20background%2C%20engaging%20smile.&width=400&height=400&seq=team3&orientation=squarish" alt="Sarah Schmidt" class="w-48 h-48 rounded-full mx-auto object-cover">
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Sarah Schmidt</h3>
+<p class="text-gray-600 mb-4" data-en="Head of Operations" data-de="Leiterin der Operationen">Head of Operations</p>
+<p class="text-gray-600 text-sm max-w-sm mx-auto" data-en="Specializes in digital transformation and process optimization" data-de="Spezialisiert auf digitale Transformation und Prozessoptimierung">Specializes in digital transformation and process optimization</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Presence -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" data-en="Our Global Presence" data-de="Unsere Globale Präsenz">Our Global Presence</h2>
+<p class="text-lg text-gray-600 mb-6" data-en="With offices strategically located in Berlin and Shanghai, we bridge the gap between European businesses and Chinese manufacturers." data-de="Mit strategisch platzierten Büros in Berlin und Shanghai überbrücken wir die Kluft zwischen europäischen Unternehmen und chinesischen Herstellern.">With offices strategically located in Berlin and Shanghai, we bridge the gap between European businesses and Chinese manufacturers.</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-building-2-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="font-medium text-gray-900 mb-1" data-en="Berlin Headquarters" data-de="Hauptsitz Berlin">Berlin Headquarters</h3>
+<p class="text-gray-600" data-en="Our European hub for client relations and strategic planning" data-de="Unser europäisches Zentrum für Kundenbeziehungen und strategische Planung">Our European hub for client relations and strategic planning</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-building-2-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="font-medium text-gray-900 mb-1" data-en="Shanghai Operations Center" data-de="Operationszentrum Shanghai">Shanghai Operations Center</h3>
+<p class="text-gray-600" data-en="Our base for supplier management and quality control" data-de="Unsere Basis für Lieferantenmanagement und Qualitätskontrolle">Our base for supplier management and quality control</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<img src="https://readdy.ai/api/search-image?query=Modern%20office%20building%20exterior%20in%20Shanghai%20financial%20district.%20Contemporary%20architecture%20with%20glass%20facade%2C%20showing%20both%20European%20and%20Asian%20business%20influence.%20Professional%20and%20prestigious%20appearance%20with%20subtle%20branding%20elements.&width=800&height=600&seq=office1&orientation=landscape" alt="Shanghai Office" class="rounded-lg shadow-lg w-full">
+</div>
+</div>
+</div>
+</section>
+<!-- Join Us -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" data-en="Join Our Growing Team" data-de="Werden Sie Teil unseres wachsenden Teams">Join Our Growing Team</h2>
+<p class="text-xl text-gray-600 mb-8" data-en="We're always looking for talented individuals who share our passion for international trade and excellence in service." data-de="Wir suchen stets nach talentierten Menschen, die unsere Leidenschaft für internationalen Handel und Service-Exzellenz teilen.">We're always looking for talented individuals who share our passion for international trade and excellence in service.</p>
+<button class="bg-primary text-white px-8 py-3 !rounded-button font-medium shadow-lg hover:bg-primary/90 transition duration-150 ease-in-out whitespace-nowrap" data-en="View Open Positions" data-de="Offene Stellen Ansehen">View Open Positions</button>
+</div>
+</div>
+

@@ -1,0 +1,85 @@
+/* Fonts */
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+    color: #111827; /* text-gray-900 */
+  }
+  
+  /* Hero Background (if needed as fallback) */
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Toggle Switch */
+  .language-switch input:checked + .slider {
+    background-color: #3b82f6; /* Tailwind 'primary' */
+  }
+  .language-switch input:checked + .slider:before {
+    transform: translateX(24px);
+  }
+  .language-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #e5e7eb; /* gray-200 */
+    transition: background-color 0.3s;
+    border-radius: 9999px;
+  }
+  .language-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+  }
+  
+  /* Utility Fixes */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Mobile Menu Transition */
+  #mobile-menu {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  /* Icon Reset */
+  :where([class^="ri-"])::before {
+    content: "\f3c2";
+  }
+  
+  /* Leadership Team Images */
+  .team-member img {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .team-member:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Section Titles */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-900 mb-6;
+  }
+  
+  /* Container Utility (if using raw CSS) */
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  

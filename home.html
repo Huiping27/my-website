@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GlobalSource - Your Trusted Sourcing Partner in China</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=A%20modern%20world%20map%20visualization%20with%20a%20light%20gray%20background%20%28RGB:%20240%2C240%2C240%29.%20The%20map%20shows%20clear%20continental%20outlines%20with%20China%20and%20Germany%20prominently%20highlighted%20in%20bright%20azure%20blue%20%28RGB:%2050%2C150%2C255%29.%20A%20subtle%20glowing%20connection%20line%20arcs%20between%20Shanghai%20and%20Berlin.%20The%20map%20style%20is%20clean%20and%20minimalist%20with%20thin%20grid%20lines.%20Europe%20and%20Asia%20are%20emphasized%20with%20slightly%20darker%20shading.%20Major%20cities%20like%20Shanghai%20and%20Berlin%20are%20marked%20with%20small%20glowing%20dots.%20The%20design%20is%20professional%20and%20elegant%2C%20perfect%20for%20a%20corporate%20website.&width=1920&height=800&seq=hero124&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.language-switch input:checked + .slider {
+background-color: #3b82f6;
+}
+.language-switch input:checked + .slider:before {
+transform: translateX(24px);
+}
+.language-switch .slider:before {
+position: absolute;
+content: "";
+height: 20px;
+width: 20px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: .3s;
+border-radius: 50%;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center">
+<a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+<nav class="hidden md:ml-10 md:flex md:space-x-8">
+<a href="#" class="text-gray-900 hover:text-primary font-medium transition duration-150 ease-in-out" data-en="Home" data-de="Startseite">Home</a>
+<a href="https://readdy.ai/home/d47577e9-cb9e-42f9-a08a-64d9bd027de3/0db5445c-95b8-4bf8-8df3-d84c5d69dc96" data-readdy="true" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out" data-en="Services" data-de="Dienstleistungen">Services</a>
+<a href="#" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out" data-en="About Us" data-de="Über Uns">About Us</a>
+<a href="#" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out" data-en="How It Works" data-de="So Funktioniert's">How It Works</a>
+<a href="#" class="text-gray-600 hover:text-primary font-medium transition duration-150 ease-in-out" data-en="Contact" data-de="Kontakt">Contact</a>
+</nav>
+</div>
+<div class="flex items-center space-x-4">
+<div class="language-switch relative inline-flex items-center">
+<span class="mr-2 text-sm font-medium text-gray-700">EN</span>
+<label class="relative inline-block w-12 h-7 rounded-full bg-gray-200">
+<input type="checkbox" class="opacity-0 w-0 h-0" id="language-toggle">
+<span class="slider absolute cursor-pointer top-0 left-0 right-0 bottom-0 rounded-full"></span>
+</label>
+<span class="ml-2 text-sm font-medium text-gray-400">DE</span>
+</div>
+<button class="bg-primary text-white px-6 py-2 !rounded-button font-medium shadow-sm hover:bg-primary/90 transition duration-150 ease-in-out whitespace-nowrap" data-en="Get Quote" data-de="Angebot Anfordern">Get Quote</button>
+<button class="md:hidden flex items-center justify-center w-10 h-10" id="mobile-menu-button">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+<!-- Mobile menu -->
+<div class="md:hidden hidden" id="mobile-menu">
+<div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50" data-en="Home" data-de="Startseite">Home</a>
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50" data-en="Services" data-de="Dienstleistungen">Services</a>
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50" data-en="About Us" data-de="Über Uns">About Us</a>
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50" data-en="How It Works" data-de="So Funktioniert's">How It Works</a>
+<a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50" data-en="Contact" data-de="Kontakt">Contact</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section relative">
+<div class="absolute inset-0 bg-gradient-to-r from-gray-800/60 to-transparent"></div>
+<div class="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
+<div class="flex flex-col justify-center min-h-[600px] md:min-h-[700px] w-full max-w-2xl py-20">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight" data-en="Your Trusted Sourcing Partner in China" data-de="Ihr Vertrauenswürdiger Sourcing-Partner in China">Your Trusted Sourcing Partner in China</h1>
+<p class="mt-6 text-xl text-white/90 max-w-xl" data-en="Based in Berlin and Shanghai, we make sourcing from China easier, more reliable, and cost-effective for your business." data-de="Mit Standorten in Berlin und Shanghai machen wir die Beschaffung aus China für Ihr Unternehmen einfacher, zuverlässiger und kosteneffizienter.">Based in Berlin and Shanghai, we make sourcing from China easier, more reliable, and cost-effective for your business.</p>
+<div class="mt-10 flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-3 !rounded-button font-medium shadow-lg hover:bg-primary/90 transition duration-150 ease-in-out whitespace-nowrap" data-en="Start Sourcing" data-de="Jetzt Starten">Start Sourcing</button>
+<button class="bg-white text-gray-900 px-8 py-3 !rounded-button font-medium shadow-lg hover:bg-gray-50 transition duration-150 ease-in-out whitespace-nowrap" data-en="Learn More" data-de="Mehr Erfahren">Learn More</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Branches -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-en="Two Ways to Transform Your Sourcing" data-de="Zwei Wege zur Transformation Ihrer Beschaffung">Two Ways to Transform Your Sourcing</h2>
+<p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto" data-en="Streamlined solutions to optimize your supply chain and boost your business growth" data-de="Optimierte Lösungen zur Verbesserung Ihrer Lieferkette und Förderung Ihres Geschäftswachstums">Streamlined solutions to optimize your supply chain and boost your business growth</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-gray-50 rounded-lg p-8 relative overflow-hidden group hover:shadow-lg transition duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full"></div>
+<div class="relative">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-search-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4" data-en="Find New Suppliers" data-de="Neue Lieferanten Finden">Find New Suppliers</h3>
+<p class="text-gray-600 mb-6" data-en="Complete sourcing solution including supplier search, quality control, and logistics support" data-de="Komplette Beschaffungslösung einschließlich Lieferantensuche, Qualitätskontrolle und Logistikunterstützung">Complete sourcing solution including supplier search, quality control, and logistics support</p>
+<ul class="space-y-3">
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span data-en="Product Sourcing & Development" data-de="Produktbeschaffung & Entwicklung">Product Sourcing & Development</span>
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span data-en="Suppliers Audit" data-de="Lieferantenprüfung">Suppliers Audit</span>
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span data-en="Quality Inspection Services" data-de="Qualitätsprüfungsdienste">Quality Inspection Services</span>
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span data-en="Logistics Support" data-de="Logistische Unterstützung">Logistics Support</span>
+</li>
+</ul>
+<button class="mt-8 bg-primary text-white px-6 py-3 !rounded-button font-medium shadow-sm hover:bg-primary/90 transition duration-150 ease-in-out whitespace-nowrap" data-en="Learn More" data-de="Mehr Erfahren">Learn More</button>
+</div>
+</div>
+<div class="bg-gray-50 rounded-lg p-8 relative overflow-hidden group hover:shadow-lg transition duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full"></div>
+<div class="relative">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-team-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4" data-en="Supplier Management" data-de="Lieferantenmanagement">Supplier Management</h3>
+<p class="text-gray-600 mb-6" data-en="We help manage and optimize your existing supplier relationships with:" data-de="Wir helfen bei der Verwaltung und Optimierung Ihrer bestehenden Lieferantenbeziehungen mit:">We help manage and optimize your existing supplier relationships with:</p>
+<ul class="space-y-3">
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span data-en="Quality Control & Inspection" data-de="Qualitätskontrolle & Inspektion">Quality Control & Inspection</span>
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span data-en="Order Management" data-de="Auftragsverwaltung">Order Management</span>
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span data-en="Price Negotiation" data-de="Preisverhandlung">Price Negotiation</span>
+</li>
+<li class="flex items-center text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span data-en="Logistics Coordination" data-de="Logistikkoordination">Logistics Coordination</span>
+</li>
+</ul>
+<button class="mt-8 bg-primary text-white px-6 py-3 !rounded-button font-medium shadow-sm hover:bg-primary/90 transition duration-150 ease-in-out whitespace-nowrap" data-en="Learn More" data-de="Mehr Erfahren">Learn More</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Overview -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-en="Our Strengths" data-de="Unsere Stärken">Our Strengths</h2>
+<p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto" data-en="Delivering value through competitive pricing, quality assurance, and transparent operations" data-de="Wertschöpfung durch wettbewerbsfähige Preise, Qualitätssicherung und transparente Abläufe">Delivering value through competitive pricing, quality assurance, and transparent operations</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-56 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Professional%20factory%20audit%20and%20inspection%20scene.%20Quality%20control%20team%20conducting%20thorough%20examination%20of%20manufacturing%20facility.%20Industrial%20setting%20with%20modern%20equipment%20and%20safety%20protocols%20visible.%20Inspectors%20checking%20production%20lines%20and%20documentation.%20Clean%2C%20well-lit%20manufacturing%20environment%20with%20focus%20on%20compliance%20verification.&width=600&height=400&seq=strength1&orientation=landscape" alt="Suppliers Audit" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-gray-900 mb-4" data-en="Suppliers Audit" data-de="Lieferantenprüfung">Suppliers Audit</h3>
+<p class="text-gray-600 mb-6" data-en="Before initiating business, we thoroughly check and audit factories to ensure they are trustworthy and capable of delivering orders on time. Our comprehensive evaluation ensures reliable partnerships." data-de="Vor Geschäftsbeginn überprüfen und auditieren wir die Fabriken gründlich, um sicherzustellen, dass sie vertrauenswürdig sind und Aufträge pünktlich liefern können.">Before initiating business, we thoroughly check and audit factories to ensure they are trustworthy and capable of delivering orders on time. Our comprehensive evaluation ensures reliable partnerships.</p>
+<button class="text-primary font-medium flex items-center group-hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap" data-en="Learn More" data-de="Mehr Erfahren">
+<span>Learn More</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-56 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Professional%20business%20negotiation%20scene%20in%20Shanghai%20office.%20Chinese%20and%20international%20business%20people%20discussing%20prices%20and%20terms%20with%20digital%20presentations.%20Modern%20office%20interior%20with%20Shanghai%20skyline%20visible%20through%20windows.%20Focus%20on%20interactive%20discussion%20and%20positive%20business%20interaction.&width=600&height=400&seq=strength2&orientation=landscape" alt="Price Negotiation" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-gray-900 mb-4" data-en="Price Negotiation" data-de="Preisverhandlung">Price Negotiation</h3>
+<p class="text-gray-600 mb-6" data-en="Our Shanghai office enables instant on-site meetings with suppliers for direct price negotiations and terms discussion, ensuring the best possible deals for our clients" data-de="Unser Büro in Shanghai ermöglicht sofortige Vor-Ort-Treffen mit Lieferanten für direkte Preisverhandlungen und Geschäftsbedingungen">Our Shanghai office enables instant on-site meetings with suppliers for direct price negotiations and terms discussion, ensuring the best possible deals for our clients</p>
+<button class="text-primary font-medium flex items-center group-hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap" data-en="Learn More" data-de="Mehr Erfahren">
+<span>Learn More</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-56 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Professional%20quality%20control%20inspection%20scene%20in%20a%20modern%20manufacturing%20facility.%20Close-up%20of%20hands%20using%20precision%20measurement%20tools%20and%20advanced%20testing%20equipment.%20Detailed%20product%20inspection%20with%20bright%20lighting.%20Focus%20on%20quality%20assurance%20processes%20and%20attention%20to%20detail.%20Clean%2C%20organized%20inspection%20workspace%20with%20technical%20instruments.&width=600&height=400&seq=strength2&orientation=landscape" alt="Quality Assurance" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-gray-900 mb-4" data-en="Secure Quality" data-de="Gesicherte Qualität">Secure Quality</h3>
+<p class="text-gray-600 mb-6" data-en="We conduct comprehensive 1-by-1 on-site inspections with higher frequency than standard third-party services, offered free of charge to ensure zero defect rate" data-de="Wir führen umfassende 1-zu-1 Vor-Ort-Inspektionen mit höherer Frequenz als Standard-Drittanbieterdienste durch, kostenlos angeboten, um eine Null-Fehlerquote zu gewährleisten">We conduct comprehensive 1-by-1 on-site inspections with higher frequency than standard third-party services, offered free of charge to ensure zero defect rate</p>
+<button class="text-primary font-medium flex items-center group-hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap" data-en="Learn More" data-de="Mehr Erfahren">
+<span>Learn More</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden group">
+<div class="h-56 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Door%20to%20door%20shipping%20and%20logistics%20operation%20scene.%20Modern%20warehouse%20with%20organized%20shipping%20containers%20and%20packages.%20Workers%20managing%20shipments%20with%20digital%20tracking%20devices.%20Clean%2C%20efficient%20shipping%20facility%20with%20clear%20labeling%20and%20systematic%20processes.%20Professional%20logistics%20operation%20focused%20on%20security%20and%20reliability.&width=600&height=400&seq=strength3&orientation=landscape" alt="Door to Door Shipping" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-gray-900 mb-4" data-en="Secure Door-to-Door Shipping" data-de="Sichere Tür-zu-Tür-Lieferung">Secure Door-to-Door Shipping</h3>
+<p class="text-gray-600 mb-6" data-en="Complete logistics solution with end-to-end tracking, customs clearance, and secure delivery to your specified location" data-de="Komplette Logistiklösung mit End-to-End-Tracking, Zollabfertigung und sicherer Lieferung an Ihren angegebenen Standort">Complete logistics solution with end-to-end tracking, customs clearance, and secure delivery to your specified location</p>
+<button class="text-primary font-medium flex items-center group-hover:text-primary/80 transition duration-150 ease-in-out whitespace-nowrap" data-en="Learn More" data-de="Mehr Erfahren">
+<span>Learn More</span>
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Indicators -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-en="Trusted by Businesses Worldwide" data-de="Vertraut von Unternehmen Weltweit">Trusted by Businesses Worldwide</h2>
+<p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto" data-en="Join hundreds of satisfied clients who have transformed their sourcing experience" data-de="Schließen Sie sich Hunderten von zufriedenen Kunden an, die ihre Beschaffungserfahrung transformiert haben">Join hundreds of satisfied clients who have transformed their sourcing experience</p>
+</div>
+<!-- Statistics -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+<div class="text-center">
+<p class="text-5xl font-bold text-primary mb-2">250+</p>
+<p class="text-lg text-gray-600" data-en="Active Clients" data-de="Aktive Kunden">Active Clients</p>
+</div>
+<div class="text-center">
+<p class="text-5xl font-bold text-primary mb-2">1,500+</p>
+<p class="text-lg text-gray-600" data-en="Projects Completed" data-de="Abgeschlossene Projekte">Projects Completed</p>
+</div>
+<div class="text-center">
+<p class="text-5xl font-bold text-primary mb-2">98%</p>
+<p class="text-lg text-gray-600" data-en="Client Satisfaction" data-de="Kundenzufriedenheit">Client Satisfaction</p>
+</div>
+<div class="text-center">
+<p class="text-5xl font-bold text-primary mb-2">12+</p>
+<p class="text-lg text-gray-600" data-en="Years Experience" data-de="Jahre Erfahrung">Years Experience</p>
+</div>
+</div>
+<!-- Testimonials -->
+<h3 class="text-2xl font-bold text-gray-900 text-center mb-10" data-en="What Our Clients Say" data-de="Was Unsere Kunden Sagen">What Our Clients Say</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+<div class="bg-gray-50 p-8 rounded-lg">
+<div class="flex items-center mb-4">
+<i class="ri-double-quotes-l ri-2x text-primary/30"></i>
+</div>
+<p class="text-gray-600 mb-6" data-en="Their local expertise in China saved us countless hours and significantly reduced our manufacturing costs. The quality control process is impeccable." data-de="Ihre lokale Expertise in China hat uns unzählige Stunden erspart und unsere Herstellungskosten erheblich reduziert. Der Qualitätskontrollprozess ist tadellos.">Their local expertise in China saved us countless hours and significantly reduced our manufacturing costs. The quality control process is impeccable.</p>
+<div class="flex items-center">
+<div class="mr-4">
+<div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center">
+<i class="ri-user-line ri-lg text-gray-600"></i>
+</div>
+</div>
+<div>
+<p class="font-medium text-gray-900">Michael Schneider</p>
+<p class="text-sm text-gray-500" data-en="CEO, TechInnovate GmbH" data-de="CEO, TechInnovate GmbH">CEO, TechInnovate GmbH</p>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 p-8 rounded-lg">
+<div class="flex items-center mb-4">
+<i class="ri-double-quotes-l ri-2x text-primary/30"></i>
+</div>
+<p class="text-gray-600 mb-6" data-en="Working with this team has transformed our supply chain. Their attention to detail and proactive communication made the entire process smooth and transparent." data-de="Die Zusammenarbeit mit diesem Team hat unsere Lieferkette transformiert. Ihre Aufmerksamkeit für Details und proaktive Kommunikation haben den gesamten Prozess reibungslos und transparent gestaltet.">Working with this team has transformed our supply chain. Their attention to detail and proactive communication made the entire process smooth and transparent.</p>
+<div class="flex items-center">
+<div class="mr-4">
+<div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center">
+<i class="ri-user-line ri-lg text-gray-600"></i>
+</div>
+</div>
+<div>
+<p class="font-medium text-gray-900">Sophie Müller</p>
+<p class="text-sm text-gray-500" data-en="Operations Director, EcoGoods" data-de="Betriebsleiterin, EcoGoods">Operations Director, EcoGoods</p>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 p-8 rounded-lg">
+<div class="flex items-center mb-4">
+<i class="ri-double-quotes-l ri-2x text-primary/30"></i>
+</div>
+<p class="text-gray-600 mb-6" data-en="As a small business, finding reliable manufacturers in China seemed daunting until we partnered with this team. They've been instrumental in our growth." data-de="Als kleines Unternehmen schien es entmutigend, zuverlässige Hersteller in China zu finden, bis wir mit diesem Team zusammengearbeitet haben. Sie waren maßgeblich an unserem Wachstum beteiligt.">As a small business, finding reliable manufacturers in China seemed daunting until we partnered with this team. They've been instrumental in our growth.</p>
+<div class="flex items-center">
+<div class="mr-4">
+<div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center">
+<i class="ri-user-line ri-lg text-gray-600"></i>
+</div>
+</div>
+<div>
+<p class="font-medium text-gray-900">Thomas Weber</p>
+<p class="text-sm text-gray-500" data-en="Founder, HomeStyle Berlin" data-de="Gründer, HomeStyle Berlin">Founder, HomeStyle Berlin</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Certifications and Partners -->
+<div class="flex flex-wrap justify-center gap-8 items-center">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center mb-2">
+<i class="ri-verified-badge-line ri-2x text-primary"></i>
+</div>
+<p class="text-sm text-gray-600 text-center" data-en="ISO 9001 Certified" data-de="ISO 9001 Zertifiziert">ISO 9001 Certified</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center mb-2">
+<i class="ri-shield-star-line ri-2x text-primary"></i>
+</div>
+<p class="text-sm text-gray-600 text-center" data-en="AEO Certified" data-de="AEO Zertifiziert">AEO Certified</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center mb-2">
+<i class="ri-award-line ri-2x text-primary"></i>
+</div>
+<p class="text-sm text-gray-600 text-center" data-en="BSCI Compliant" data-de="BSCI-konform">BSCI Compliant</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center mb-2">
+<i class="ri-recycle-line ri-2x text-primary"></i>
+</div>
+<p class="text-sm text-gray-600 text-center" data-en="Eco-Friendly Partner" data-de="Umweltfreundlicher Partner">Eco-Friendly Partner</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center mb-2">
+<i class="ri-global-line ri-2x text-primary"></i>
+</div>
+<p class="text-sm text-gray-600 text-center" data-en="German Chamber of Commerce" data-de="Deutsche Handelskammer">German Chamber of Commerce</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" data-en="Get in Touch" data-de="Kontaktieren Sie Uns">Get in Touch</h2>
+<p class="text-lg text-gray-600 mb-8" data-en="Have questions about our services? Ready to start your sourcing journey? Contact us today and our experts will get back to you within 24 hours." data-de="Haben Sie Fragen zu unseren Dienstleistungen? Bereit, Ihre Beschaffungsreise zu beginnen? Kontaktieren Sie uns noch heute und unsere Experten werden sich innerhalb von 24 Stunden bei Ihnen melden.">Have questions about our services? Ready to start your sourcing journey? Contact us today and our experts will get back to you within 24 hours.</p>
+<div class="space-y-6 mb-8">
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-map-pin-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="font-medium text-gray-900 mb-1" data-en="Berlin Office" data-de="Berliner Büro">Berlin Office</h3>
+<p class="text-gray-600" data-en="Friedrichstraße 123, 10117 Berlin, Germany" data-de="Friedrichstraße 123, 10117 Berlin, Deutschland">Friedrichstraße 123, 10117 Berlin, Germany</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-map-pin-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="font-medium text-gray-900 mb-1" data-en="Shanghai Office" data-de="Shanghai Büro">Shanghai Office</h3>
+<p class="text-gray-600" data-en="Century Avenue 1568, Pudong District, Shanghai, China" data-de="Century Avenue 1568, Pudong Bezirk, Shanghai, China">Century Avenue 1568, Pudong District, Shanghai, China</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-phone-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="font-medium text-gray-900 mb-1" data-en="Phone" data-de="Telefon">Phone</h3>
+<p class="text-gray-600">+49 30 1234 5678 (Berlin)</p>
+<p class="text-gray-600">+86 21 5678 1234 (Shanghai)</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-mail-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="font-medium text-gray-900 mb-1" data-en="Email" data-de="E-Mail">Email</h3>
+<p class="text-gray-600">info@globalsourcing.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<h3 class="text-2xl font-bold text-gray-900 mb-6" data-en="Send Us a Message" data-de="Senden Sie Uns eine Nachricht">Send Us a Message</h3>
+<form>
+<div class="mb-6">
+<label for="name" class="block text-sm font-medium text-gray-700 mb-2" data-en="Name" data-de="Name">Name</label>
+<input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="John Doe">
+</div>
+<div class="mb-6">
+<label for="email" class="block text-sm font-medium text-gray-700 mb-2" data-en="Email" data-de="E-Mail">Email</label>
+<input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="john@example.com">
+</div>
+<div class="mb-6">
+<label for="company" class="block text-sm font-medium text-gray-700 mb-2" data-en="Company" data-de="Unternehmen">Company</label>
+<input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Your Company Ltd.">
+</div>
+<div class="mb-6">
+<label for="message" class="block text-sm font-medium text-gray-700 mb-2" data-en="Message" data-de="Nachricht">Message</label>
+<textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none transition" placeholder="Tell us about your sourcing needs..."></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white px-6 py-3 !rounded-button font-medium shadow-sm hover:bg-primary/90 transition duration-150 ease-in-out whitespace-nowrap" data-en="Send Message" data-de="Nachricht Senden">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<div>
+<a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 inline-block">logo</a>
+<p class="text-gray-400 mb-6" data-en="Your trusted partner for sourcing products from China with offices in Berlin and Shanghai." data-de="Ihr vertrauenswürdiger Partner für die Beschaffung von Produkten aus China mit Büros in Berlin und Shanghai.">Your trusted partner for sourcing products from China with offices in Berlin and Shanghai.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-150">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-150">
+<i class="ri-twitter-x-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-150">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-150">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6" data-en="Quick Links" data-de="Schnelllinks">Quick Links</h3>
+<ul class="space-y-4">
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150" data-en="Home" data-de="Startseite">Home</a></li>
+<li><a href="https://readdy.ai/home/d47577e9-cb9e-42f9-a08a-64d9bd027de3/0db5445c-95b8-4bf8-8df3-d84c5d69dc96" data-readdy="true" class="text-gray-400 hover:text-white transition duration-150" data-en="Services" data-de="Dienstleistungen">Services</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150" data-en="About Us" data-de="Über Uns">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150" data-en="How It Works" data-de="So Funktioniert's">How It Works</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150" data-en="Contact" data-de="Kontakt">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6" data-en="Services" data-de="Dienstleistungen">Services</h3>
+<ul class="space-y-4">
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150" data-en="Product Sourcing" data-de="Produktbeschaffung">Product Sourcing</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150" data-en="Quality Inspection" data-de="Qualitätsprüfung">Quality Inspection</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150" data-en="Logistics Support" data-de="Logistische Unterstützung">Logistics Support</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150" data-en="Supplier Verification" data-de="Lieferantenüberprüfung">Supplier Verification</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition duration-150" data-en="Market Research" data-de="Marktforschung">Market Research</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6" data-en="Newsletter" data-de="Newsletter">Newsletter</h3>
+<p class="text-gray-400 mb-4" data-en="Subscribe to our newsletter for the latest updates and insights on sourcing from China." data-de="Abonnieren Sie unseren Newsletter für die neuesten Updates und Einblicke zur Beschaffung aus China.">Subscribe to our newsletter for the latest updates and insights on sourcing from China.</p>
+<form class="mb-4">
+<div class="flex">
+<input type="email" class="flex-grow px-4 py-3 rounded-l border-none focus:outline-none text-gray-900" placeholder="Your email">
+<button type="submit" class="bg-primary text-white px-4 py-3 rounded-r hover:bg-primary/90 transition duration-150 whitespace-nowrap" data-en="Subscribe" data-de="Abonnieren">Subscribe</button>
+</div>
+</form>
+<div class="flex items-center space-x-4">
+<div class="flex items-center">
+<i class="ri-visa-line ri-lg mr-2"></i>
+<span class="text-sm text-gray-400">Visa</span>
+</div>
+<div class="flex items-center">
+<i class="ri-mastercard-line ri-lg mr-2"></i>
+<span class="text-sm text-gray-400">Mastercard</span>
+</div>
+<div class="flex items-center">
+<i class="ri-paypal-line ri-lg mr-2"></i>
+<span class="text-sm text-gray-400">PayPal</span>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0" data-en="© 2025 GlobalSource. All rights reserved." data-de="© 2025 GlobalSource. Alle Rechte vorbehalten.">© 2025 GlobalSource. All rights reserved.</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-400 text-sm hover:text-white transition duration-150" data-en="Privacy Policy" data-de="Datenschutz">Privacy Policy</a>
+<a href="#" class="text-gray-400 text-sm hover:text-white transition duration-150" data-en="Terms of Service" data-de="Nutzungsbedingungen">Terms of Service</a>
+<a href="#" class="text-gray-400 text-sm hover:text-white transition duration-150" data-en="Cookies" data-de="Cookies">Cookies</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+// Toggle icon
+const icon = mobileMenuButton.querySelector('i');
+if (mobileMenu.classList.contains('hidden')) {
+icon.classList.remove('ri-close-line');
+icon.classList.add('ri-menu-line');
+} else {
+icon.classList.remove('ri-menu-line');
+icon.classList.add('ri-close-line');
+}
+});
+});
+</script>
+<script id="language-toggle-script">
+document.addEventListener('DOMContentLoaded', function() {
+const languageToggle = document.getElementById('language-toggle');
+const elementsWithDataAttributes = document.querySelectorAll('[data-en][data-de]');
+// Initialize with English
+let currentLanguage = 'en';
+// Function to update language
+function updateLanguage(lang) {
+elementsWithDataAttributes.forEach(element => {
+element.textContent = element.getAttribute(`data-${lang}`);
+});
+currentLanguage = lang;
+}
+// Toggle language when switch is clicked
+languageToggle.addEventListener('change', function() {
+if (this.checked) {
+updateLanguage('de');
+} else {
+updateLanguage('en');
+}
+});
+});
+</script>
+</body>
+</html>
